@@ -8,6 +8,7 @@
 		<aop:aspectj-autoproxy></aop:aspectj-autoproxy>
 		<bean id="myAspect" class="aop002.MyAspect" />
 		<bean id="boy" class="aop002.Boy" />
+		<bean id="girl" class="aop002.Girl" />
 
 
 </beans>

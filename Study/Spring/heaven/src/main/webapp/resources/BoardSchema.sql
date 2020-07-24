@@ -7,4 +7,4 @@ CREATE TABLE BOARD
    password INT NOT NULL,
    regDate TIMESTAMP NOT NULL,
    cnt INT NOT NULL
-)
+);

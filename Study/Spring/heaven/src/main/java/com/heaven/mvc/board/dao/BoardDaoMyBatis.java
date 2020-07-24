@@ -29,7 +29,7 @@ public class BoardDaoMyBatis implements BoardDao {
 
 	@Override
 	public int deleteAll() {
-		return sqlSessionTemplate.delete("deletAll");
+		return sqlSessionTemplate.delete("deleteAll");
 	}
 
 	@Override

@@ -2,9 +2,7 @@ package com.poogle.frogbook.lambdaPractice;
 
 public class B007 {
     public static void main(String[] args) {
-        MyFunctionalInterface mfi = a -> a * a;
-
-        dolt(mfi);
+        dolt( a -> a * a);
     }
 
     private static void dolt(MyFunctionalInterface mfi) {

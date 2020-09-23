@@ -1,4 +1,9 @@
 # Default ignored files
+HELP.md
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**
+!**/src/test/**
 .gradle
 .idea
 /shelf/
@@ -8,4 +13,28 @@
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
-out
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+*.iws
+*.iml
+*.ipr
+out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/

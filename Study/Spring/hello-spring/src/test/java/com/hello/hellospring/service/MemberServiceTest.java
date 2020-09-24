@@ -3,6 +3,7 @@ package com.hello.hellospring.service;
 import com.hello.hellospring.domain.Member;
 import com.hello.hellospring.repository.MemoryMemberRepository;
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -10,12 +11,20 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class MemberServiceTest {
 
-    MemberService memberService = new MemberService();
-    MemoryMemberRepository memoryMemberRepository = new MemoryMemberRepository();
+    MemberService memberService;
+    MemoryMemberRepository memberRepository;
+
+    //테스트 실행할 때마다 독립적으로 시행되어야 하기 때문에
+    //그 전에 memberService에서 쓰도록 memberRepository를 넣어준다 => DI(Dependency Injection)
+    @BeforeEach
+    public void beforeEach() {
+        memberRepository = new MemoryMemberRepository();
+        memberService = new MemberService(memberRepository);
+    }
 
     @AfterEach
     public void afterEach() {
-        memoryMemberRepository.clearStore();
+        memberRepository.clearStore();
     }
 
     @Test

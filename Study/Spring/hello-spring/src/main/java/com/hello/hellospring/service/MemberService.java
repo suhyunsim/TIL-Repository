@@ -8,12 +8,10 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Service
 public class MemberService {
     private final MemberRepository memberRepository;
 
     // 직접 new로 생성하는 것이 아니라 외부에서 넣어주도록 변경 - 생성자 주입 방식으로
-    @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }

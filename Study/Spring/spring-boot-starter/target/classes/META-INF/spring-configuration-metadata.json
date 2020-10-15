@@ -1,0 +1,23 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.poogle.springbootstarter.HolomanProperties",
+      "name": "holoman",
+      "type": "com.poogle.springbootstarter.HolomanProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.poogle.springbootstarter.HolomanProperties",
+      "defaultValue": 0,
+      "name": "holoman.how-long",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.poogle.springbootstarter.HolomanProperties",
+      "name": "holoman.name",
+      "type": "java.lang.String"
+    }
+  ]
+}

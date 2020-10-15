@@ -13,13 +13,5 @@ public class Application {
         application.setWebApplicationType(WebApplicationType.NONE);
         application.run(args);
     }
-
-    //이렇게 이 플젝에서 Bean을 재정의하면 에러메세지가 뜸
-    @Bean
-    public Holoman holoman() {
-        Holoman holoman = new Holoman();
-        holoman.setName("k");
-        holoman.setHowLong(60);
-        return holoman;
-    }
+    //Bean 매번 재정의하기 싫음
 }

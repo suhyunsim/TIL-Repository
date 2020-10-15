@@ -15,7 +15,6 @@ public class Application {
     }
 
     //이렇게 이 플젝에서 Bean을 재정의하면 에러메세지가 뜸
-    /*
     @Bean
     public Holoman holoman() {
         Holoman holoman = new Holoman();
@@ -23,5 +22,4 @@ public class Application {
         holoman.setHowLong(60);
         return holoman;
     }
-    */
 }
